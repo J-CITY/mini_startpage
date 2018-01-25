@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box; 
+}
+
+html,
+body,
+h3 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  color: #657b83;
+  font-family: Segoe UI Light;
+  font-size: 15px;
+  line-height: 150%;
+
+  background: linear-gradient(-45deg, #4bd6b8, #4dbddf, #749ddb, #4ebddb);
+  background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+div {
+  height: 100%; }
+
+canvas {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; 
+}
+
+.big-search-div {
+  border: 0px;
+}
+
+.input-color { color: #b58900; }
+
+.big-search {
+  top: 30%;
+  position: fixed;
+  overflow: hidden;
+  z-index: -2;
+  width: 100%;
+  height: 30%;
+  border: 0px;
+  font-family: Segoe UI Light;
+  font-size: 96px;
+  text-align: center;
+  visibility: hidden;
+  outline:none;
+}
+
+.background {
+  position: fixed;
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  filter: blur(0px);
+  top: -5px;
+  left: -5px;
+  width:  110%;
+  height: 110%;
+  visibility: visible;
+  background-size: cover;
+  box-shadow:0 0 0 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.help {
+  position: fixed;
+  overflow: hidden;
+  display: block;
+  z-index: -1;
+  visibility: hidden;
+  width:  100%;
+  height: 70%;
+  text-align: left;
+  font-size: 14pt;
+  top: 0px;
+  margin-top: 100px;
+  align: center;
+}
+
+/*search*/
+#searchbox {
+  margin: 4px;
+  padding: 8px;
+  -webkit-box-shadow: 1px 1px 10px 0px #000;
+     -moz-box-shadow: 1px 1px 10px 0px #000;
+          box-shadow: 1px 1px 10px 0px #000;
+}
+
+form {
+  display: inline;
+}
+
+input 	{
+  display: inline;
+  width: 64%;
+  background: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*clock*/
+.clock {
+  top: 0px;
+  margin-top: 300px;
+  font-family: Segoe UI Light;
+  font-size: 200px;
+  text-align: center;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
