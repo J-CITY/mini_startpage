@@ -1,4 +1,4 @@
-# mini_startpage
+# Simple startpage
 
 F2 for search
 F4 for help
